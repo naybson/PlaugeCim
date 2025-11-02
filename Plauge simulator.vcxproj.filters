@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\header files">
+      <UniqueIdentifier>{7727b6b5-fa0a-4bdb-95ca-4a6dd3264d62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src files">
+      <UniqueIdentifier>{f89f57bd-1ee6-4f59-8436-1187b4abe7c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src files\core">
+      <UniqueIdentifier>{6d93b177-b528-4d49-8c13-a6a656bb496c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src files\disease">
+      <UniqueIdentifier>{67081e05-5371-4e6f-84b5-a6d32925a34c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src files\world">
+      <UniqueIdentifier>{97c0ff12-434d-4257-9f32-8460670fabcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src files\ui">
+      <UniqueIdentifier>{784f6088-0ef3-4d58-a0c5-9d8b4d4924a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src files\transport">
+      <UniqueIdentifier>{066022f0-3d92-46ce-bc0d-28fb290c7ca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src files\end">
+      <UniqueIdentifier>{2f8baa50-d067-4c8e-8b32-5b6a09e6b584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\header files\core">
+      <UniqueIdentifier>{46cd1d05-cdea-46fa-b75b-81ae6ede0551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\header files\utils">
+      <UniqueIdentifier>{5c1ebb72-d67a-4e4c-b6e6-efa7d594277f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\header files\disease">
+      <UniqueIdentifier>{4681e674-b641-4204-89c5-203945149f1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\header files\end">
+      <UniqueIdentifier>{da57bf63-c2a6-43bc-9811-9c1aec646bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\header files\transport">
+      <UniqueIdentifier>{77cdda65-bfd6-4b1c-b701-d44b199dc715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\header files\world">
+      <UniqueIdentifier>{253721f7-41b5-4227-b78e-b733ba0951ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\header files\ui">
+      <UniqueIdentifier>{f8281b1b-9a9a-4c43-8b4b-dcba3226db79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src files\utils">
+      <UniqueIdentifier>{9d84cdb4-5a6c-4dcc-a64d-7810d3804240}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Source Files\src files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="disease.c">
+      <Filter>Source Files\src files\disease</Filter>
+    </ClCompile>
+    <ClCompile Include="cure.c">
+      <Filter>Source Files\src files\disease</Filter>
+    </ClCompile>
+    <ClCompile Include="symptoms.c">
+      <Filter>Source Files\src files\disease</Filter>
+    </ClCompile>
+    <ClCompile Include="world.c">
+      <Filter>Source Files\src files\world</Filter>
+    </ClCompile>
+    <ClCompile Include="map_io.c">
+      <Filter>Source Files\src files\world</Filter>
+    </ClCompile>
+    <ClCompile Include="ships.c">
+      <Filter>Source Files\src files\transport</Filter>
+    </ClCompile>
+    <ClCompile Include="sea_path.c">
+      <Filter>Source Files\src files\transport</Filter>
+    </ClCompile>
+    <ClCompile Include="ports.c">
+      <Filter>Source Files\src files\transport</Filter>
+    </ClCompile>
+    <ClCompile Include="rng.c">
+      <Filter>Source Files\src files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="console_win.c">
+      <Filter>Source Files\src files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="end_condition.c">
+      <Filter>Source Files\src files\end</Filter>
+    </ClCompile>
+    <ClCompile Include="end_graph.c">
+      <Filter>Source Files\src files\end</Filter>
+    </ClCompile>
+    <ClCompile Include="end_screen.c">
+      <Filter>Source Files\src files\end</Filter>
+    </ClCompile>
+    <ClCompile Include="ansi.c">
+      <Filter>Source Files\src files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="render.c">
+      <Filter>Source Files\src files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="turnpoints.c">
+      <Filter>Source Files\src files\end</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.c">
+      <Filter>Source Files\src files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="patient_zero.c">
+      <Filter>Source Files\src files\disease</Filter>
+    </ClCompile>
+    <ClCompile Include="setup.c">
+      <Filter>Source Files\src files\world</Filter>
+    </ClCompile>
+    <ClCompile Include="hud.c">
+      <Filter>Source Files\src files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="disease_io.c">
+      <Filter>Source Files\src files\disease</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="map.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="diseases.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="disease.h">
+      <Filter>Source Files\header files\disease</Filter>
+    </ClInclude>
+    <ClInclude Include="patient_zero.h">
+      <Filter>Source Files\header files\disease</Filter>
+    </ClInclude>
+    <ClInclude Include="symptoms.h">
+      <Filter>Source Files\header files\disease</Filter>
+    </ClInclude>
+    <ClInclude Include="cure.h">
+      <Filter>Source Files\header files\disease</Filter>
+    </ClInclude>
+    <ClInclude Include="end_condition.h">
+      <Filter>Source Files\header files\end</Filter>
+    </ClInclude>
+    <ClInclude Include="end_graph.h">
+      <Filter>Source Files\header files\end</Filter>
+    </ClInclude>
+    <ClInclude Include="end_screen.h">
+      <Filter>Source Files\header files\end</Filter>
+    </ClInclude>
+    <ClInclude Include="hud.h">
+      <Filter>Source Files\header files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ports.h">
+      <Filter>Source Files\header files\transport</Filter>
+    </ClInclude>
+    <ClInclude Include="rng.h">
+      <Filter>Source Files\header files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ships.h">
+      <Filter>Source Files\header files\transport</Filter>
+    </ClInclude>
+    <ClInclude Include="turnpoints.h">
+      <Filter>Source Files\header files\end</Filter>
+    </ClInclude>
+    <ClInclude Include="world.h">
+      <Filter>Source Files\header files\world</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>Source Files\header files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="map_io.h">
+      <Filter>Source Files\header files\world</Filter>
+    </ClInclude>
+    <ClInclude Include="setup.h">
+      <Filter>Source Files\header files\world</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Source Files\header files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ansi.h">
+      <Filter>Source Files\header files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="console_win.h">
+      <Filter>Source Files\header files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="sea_path.h">
+      <Filter>Source Files\header files\transport</Filter>
+    </ClInclude>
+    <ClInclude Include="render.h">
+      <Filter>Source Files\header files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Source Files\header files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="game_defs.h">
+      <Filter>Source Files\header files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="disease_io.h">
+      <Filter>Source Files\header files\disease</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
