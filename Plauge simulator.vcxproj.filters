@@ -63,152 +63,152 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.c">
+    <ClCompile Include="src\main.c">
       <Filter>Source Files\src files\core</Filter>
     </ClCompile>
-    <ClCompile Include="disease.c">
+    <ClCompile Include="src\disease.c">
       <Filter>Source Files\src files\disease</Filter>
     </ClCompile>
-    <ClCompile Include="cure.c">
+    <ClCompile Include="src\cure.c">
       <Filter>Source Files\src files\disease</Filter>
     </ClCompile>
-    <ClCompile Include="symptoms.c">
+    <ClCompile Include="src\symptoms.c">
       <Filter>Source Files\src files\disease</Filter>
     </ClCompile>
-    <ClCompile Include="world.c">
+    <ClCompile Include="src\world.c">
       <Filter>Source Files\src files\world</Filter>
     </ClCompile>
-    <ClCompile Include="map_io.c">
+    <ClCompile Include="src\map_io.c">
       <Filter>Source Files\src files\world</Filter>
     </ClCompile>
-    <ClCompile Include="ships.c">
+    <ClCompile Include="src\ships.c">
       <Filter>Source Files\src files\transport</Filter>
     </ClCompile>
-    <ClCompile Include="sea_path.c">
+    <ClCompile Include="src\sea_path.c">
       <Filter>Source Files\src files\transport</Filter>
     </ClCompile>
-    <ClCompile Include="ports.c">
+    <ClCompile Include="src\ports.c">
       <Filter>Source Files\src files\transport</Filter>
     </ClCompile>
-    <ClCompile Include="rng.c">
+    <ClCompile Include="src\rng.c">
       <Filter>Source Files\src files\utils</Filter>
     </ClCompile>
-    <ClCompile Include="console_win.c">
+    <ClCompile Include="src\console_win.c">
       <Filter>Source Files\src files\ui</Filter>
     </ClCompile>
-    <ClCompile Include="end_condition.c">
+    <ClCompile Include="src\end_condition.c">
       <Filter>Source Files\src files\end</Filter>
     </ClCompile>
-    <ClCompile Include="end_graph.c">
+    <ClCompile Include="src\end_graph.c">
       <Filter>Source Files\src files\end</Filter>
     </ClCompile>
-    <ClCompile Include="end_screen.c">
+    <ClCompile Include="src\end_screen.c">
       <Filter>Source Files\src files\end</Filter>
     </ClCompile>
-    <ClCompile Include="ansi.c">
+    <ClCompile Include="src\ansi.c">
       <Filter>Source Files\src files\ui</Filter>
     </ClCompile>
-    <ClCompile Include="render.c">
+    <ClCompile Include="src\render.c">
       <Filter>Source Files\src files\ui</Filter>
     </ClCompile>
-    <ClCompile Include="turnpoints.c">
+    <ClCompile Include="src\turnpoints.c">
       <Filter>Source Files\src files\end</Filter>
     </ClCompile>
-    <ClCompile Include="utils.c">
+    <ClCompile Include="src\utils.c">
       <Filter>Source Files\src files\utils</Filter>
     </ClCompile>
-    <ClCompile Include="patient_zero.c">
+    <ClCompile Include="src\patient_zero.c">
       <Filter>Source Files\src files\disease</Filter>
     </ClCompile>
-    <ClCompile Include="setup.c">
+    <ClCompile Include="src\setup.c">
       <Filter>Source Files\src files\world</Filter>
     </ClCompile>
-    <ClCompile Include="hud.c">
+    <ClCompile Include="src\hud.c">
       <Filter>Source Files\src files\ui</Filter>
     </ClCompile>
-    <ClCompile Include="disease_io.c">
+    <ClCompile Include="src\disease_io.c">
       <Filter>Source Files\src files\disease</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="map.txt">
+    <Text Include="assets\map.txt">
       <Filter>Source Files</Filter>
     </Text>
-    <Text Include="diseases.txt">
+    <Text Include="assets\diseases.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="disease.h">
+    <ClInclude Include="include\disease.h">
       <Filter>Source Files\header files\disease</Filter>
     </ClInclude>
-    <ClInclude Include="patient_zero.h">
+    <ClInclude Include="include\patient_zero.h">
       <Filter>Source Files\header files\disease</Filter>
     </ClInclude>
-    <ClInclude Include="symptoms.h">
+    <ClInclude Include="include\symptoms.h">
       <Filter>Source Files\header files\disease</Filter>
     </ClInclude>
-    <ClInclude Include="cure.h">
+    <ClInclude Include="include\cure.h">
       <Filter>Source Files\header files\disease</Filter>
     </ClInclude>
-    <ClInclude Include="end_condition.h">
+    <ClInclude Include="include\end_condition.h">
       <Filter>Source Files\header files\end</Filter>
     </ClInclude>
-    <ClInclude Include="end_graph.h">
+    <ClInclude Include="include\end_graph.h">
       <Filter>Source Files\header files\end</Filter>
     </ClInclude>
-    <ClInclude Include="end_screen.h">
+    <ClInclude Include="include\end_screen.h">
       <Filter>Source Files\header files\end</Filter>
     </ClInclude>
-    <ClInclude Include="hud.h">
+    <ClInclude Include="include\hud.h">
       <Filter>Source Files\header files\ui</Filter>
     </ClInclude>
-    <ClInclude Include="ports.h">
+    <ClInclude Include="include\ports.h">
       <Filter>Source Files\header files\transport</Filter>
     </ClInclude>
-    <ClInclude Include="rng.h">
+    <ClInclude Include="include\rng.h">
       <Filter>Source Files\header files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="ships.h">
+    <ClInclude Include="include\ships.h">
       <Filter>Source Files\header files\transport</Filter>
     </ClInclude>
-    <ClInclude Include="turnpoints.h">
+    <ClInclude Include="include\turnpoints.h">
       <Filter>Source Files\header files\end</Filter>
     </ClInclude>
-    <ClInclude Include="world.h">
+    <ClInclude Include="include\world.h">
       <Filter>Source Files\header files\world</Filter>
     </ClInclude>
-    <ClInclude Include="types.h">
+    <ClInclude Include="include\types.h">
       <Filter>Source Files\header files\core</Filter>
     </ClInclude>
-    <ClInclude Include="map_io.h">
+    <ClInclude Include="include\map_io.h">
       <Filter>Source Files\header files\world</Filter>
     </ClInclude>
-    <ClInclude Include="setup.h">
+    <ClInclude Include="include\setup.h">
       <Filter>Source Files\header files\world</Filter>
     </ClInclude>
-    <ClInclude Include="utils.h">
+    <ClInclude Include="include\utils.h">
       <Filter>Source Files\header files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="ansi.h">
+    <ClInclude Include="include\ansi.h">
       <Filter>Source Files\header files\ui</Filter>
     </ClInclude>
-    <ClInclude Include="console_win.h">
+    <ClInclude Include="include\console_win.h">
       <Filter>Source Files\header files\ui</Filter>
     </ClInclude>
-    <ClInclude Include="sea_path.h">
+    <ClInclude Include="include\sea_path.h">
       <Filter>Source Files\header files\transport</Filter>
     </ClInclude>
-    <ClInclude Include="render.h">
+    <ClInclude Include="include\render.h">
       <Filter>Source Files\header files\ui</Filter>
     </ClInclude>
-    <ClInclude Include="config.h">
+    <ClInclude Include="include\config.h">
       <Filter>Source Files\header files\core</Filter>
     </ClInclude>
-    <ClInclude Include="game_defs.h">
+    <ClInclude Include="include\game_defs.h">
       <Filter>Source Files\header files\core</Filter>
     </ClInclude>
-    <ClInclude Include="disease_io.h">
+    <ClInclude Include="include\disease_io.h">
       <Filter>Source Files\header files\disease</Filter>
     </ClInclude>
   </ItemGroup>
