@@ -3,6 +3,8 @@
 > Plague Inc-style disease simulator written in pure C.  
 > Graded **100/100** as a university project at Holon Institute of Technology.
 
+![PlagueCim demo](assets/demo.gif)
+
 Real-time disease spread across a world map, with terrain, climate, and settlement modifiers affecting per-cell infection probability via **Bernoulli trials**. Port and ship system using **BFS sea pathfinding** and a gravity model to generate trade routes. Ships sail live across the map. Includes a symptom mutation tree, cure system, and a **flicker-free diff renderer**.
 
 > **Platform:** Windows — build with Visual Studio 2022 (solution included)
