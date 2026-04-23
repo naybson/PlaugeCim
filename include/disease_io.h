@@ -4,7 +4,7 @@
 #include "config.h"   /* SimConfig */
 #include "disease.h"  /* Disease */
 
-#define DISEASES_FILE_PATH   "diseases.txt"
+#define DISEASES_FILE_PATH   "assets/diseases.txt"
 #define DISEASE_NAME_MAX     64
 #define DISEASE_LIST_MAX     128
 
@@ -18,7 +18,7 @@ int disease_save_append(const char* path, const char* name, const Disease* dz, c
 int disease_name_exists(const char* path, const char* name);
 
 /* Save with collision handling.
-   name_io: in/out — may be updated if user chooses Rename.
+   name_io: in/out ï¿½ may be updated if user chooses Rename.
    Returns: 1 on success (file written), 0 on cancel/error. */
 int disease_save_with_prompt(const char* path,
     char* name_io,
