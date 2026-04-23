@@ -76,6 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,6 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -104,6 +106,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,6 +121,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,58 +131,58 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ansi.c" />
-    <ClCompile Include="console_win.c" />
-    <ClCompile Include="cure.c" />
-    <ClCompile Include="disease.c" />
-    <ClCompile Include="disease_io.c" />
-    <ClCompile Include="end_condition.c" />
-    <ClCompile Include="end_graph.c" />
-    <ClCompile Include="end_screen.c" />
-    <ClCompile Include="hud.c" />
-    <ClCompile Include="main.c" />
-    <ClCompile Include="map_io.c" />
-    <ClCompile Include="patient_zero.c" />
-    <ClCompile Include="ports.c" />
-    <ClCompile Include="render.c" />
-    <ClCompile Include="rng.c" />
-    <ClCompile Include="sea_path.c" />
-    <ClCompile Include="setup.c" />
-    <ClCompile Include="ships.c" />
-    <ClCompile Include="symptoms.c" />
-    <ClCompile Include="turnpoints.c" />
-    <ClCompile Include="utils.c" />
-    <ClCompile Include="world.c" />
+    <ClCompile Include="src\ansi.c" />
+    <ClCompile Include="src\console_win.c" />
+    <ClCompile Include="src\cure.c" />
+    <ClCompile Include="src\disease.c" />
+    <ClCompile Include="src\disease_io.c" />
+    <ClCompile Include="src\end_condition.c" />
+    <ClCompile Include="src\end_graph.c" />
+    <ClCompile Include="src\end_screen.c" />
+    <ClCompile Include="src\hud.c" />
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\map_io.c" />
+    <ClCompile Include="src\patient_zero.c" />
+    <ClCompile Include="src\ports.c" />
+    <ClCompile Include="src\render.c" />
+    <ClCompile Include="src\rng.c" />
+    <ClCompile Include="src\sea_path.c" />
+    <ClCompile Include="src\setup.c" />
+    <ClCompile Include="src\ships.c" />
+    <ClCompile Include="src\symptoms.c" />
+    <ClCompile Include="src\turnpoints.c" />
+    <ClCompile Include="src\utils.c" />
+    <ClCompile Include="src\world.c" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="diseases.txt" />
-    <Text Include="map.txt" />
+    <Text Include="assets\diseases.txt" />
+    <Text Include="assets\map.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ansi.h" />
-    <ClInclude Include="config.h" />
-    <ClInclude Include="console_win.h" />
-    <ClInclude Include="cure.h" />
-    <ClInclude Include="disease.h" />
-    <ClInclude Include="disease_io.h" />
-    <ClInclude Include="end_condition.h" />
-    <ClInclude Include="end_graph.h" />
-    <ClInclude Include="end_screen.h" />
-    <ClInclude Include="game_defs.h" />
-    <ClInclude Include="hud.h" />
-    <ClInclude Include="map_io.h" />
-    <ClInclude Include="patient_zero.h" />
-    <ClInclude Include="ports.h" />
-    <ClInclude Include="render.h" />
-    <ClInclude Include="rng.h" />
-    <ClInclude Include="sea_path.h" />
-    <ClInclude Include="setup.h" />
-    <ClInclude Include="ships.h" />
-    <ClInclude Include="symptoms.h" />
-    <ClInclude Include="turnpoints.h" />
-    <ClInclude Include="types.h" />
-    <ClInclude Include="utils.h" />
-    <ClInclude Include="world.h" />
+    <ClInclude Include="include\ansi.h" />
+    <ClInclude Include="include\config.h" />
+    <ClInclude Include="include\console_win.h" />
+    <ClInclude Include="include\cure.h" />
+    <ClInclude Include="include\disease.h" />
+    <ClInclude Include="include\disease_io.h" />
+    <ClInclude Include="include\end_condition.h" />
+    <ClInclude Include="include\end_graph.h" />
+    <ClInclude Include="include\end_screen.h" />
+    <ClInclude Include="include\game_defs.h" />
+    <ClInclude Include="include\hud.h" />
+    <ClInclude Include="include\map_io.h" />
+    <ClInclude Include="include\patient_zero.h" />
+    <ClInclude Include="include\ports.h" />
+    <ClInclude Include="include\render.h" />
+    <ClInclude Include="include\rng.h" />
+    <ClInclude Include="include\sea_path.h" />
+    <ClInclude Include="include\setup.h" />
+    <ClInclude Include="include\ships.h" />
+    <ClInclude Include="include\symptoms.h" />
+    <ClInclude Include="include\turnpoints.h" />
+    <ClInclude Include="include\types.h" />
+    <ClInclude Include="include\utils.h" />
+    <ClInclude Include="include\world.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
