@@ -30,7 +30,7 @@
 
 /* Input map file path */
 #ifndef MAP_FILE_PATH
-#define MAP_FILE_PATH                "map.txt"
+#define MAP_FILE_PATH                "assets/map.txt"
 #endif
 
 /* Extra console rows for HUD below the map */
