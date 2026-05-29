@@ -10,9 +10,8 @@
 // IMPORTANT: Behavior preserved exactly. This is a readability pass.
 
 #include <stdio.h>      // FILE*, fgetc, ungetc
-#include <math.h>       // sqrt, floor
-#include <windows.h>    // GetTickCount64, Sleep
-
+#include <math.h>       /* sqrt, floor */
+#include "platform.h"   /* platform_sleep_ms / platform_now_ms â€” cross-platform */
 #include "utils.h"
 #include "rng.h"        // rng01()
 
@@ -41,7 +40,7 @@
  * any consumed bytes so the stream is untouched.
  *
  * Why this works:
- *   - We peek the first 1–3 bytes.
+ *   - We peek the first 1ï¿½3 bytes.
  *   - If they don't match the BOM sequence, we ungetc() them in reverse order.
  *   - If they do match, we simply leave the stream positioned after the BOM.
  */
@@ -100,7 +99,7 @@ double d_clamp(double v, double lo, double hi) {
  *   - Finally we clamp to [0, n].
  *
  * Why this exists:
- *   - It’s visually good enough for sim randomness without heavy RNG costs.
+ *   - Itï¿½s visually good enough for sim randomness without heavy RNG costs.
  */
 int approx_binomial(int n, double p) {
     if (n <= 0 || p <= PROB_MIN) return 0;
@@ -120,14 +119,9 @@ int approx_binomial(int n, double p) {
  * For Windows, we use GetTickCount64() which is simple and good enough here.
  */
 unsigned long long now_ms(void) {
-    return (unsigned long long)GetTickCount64();
+    return platform_now_ms();
 }
 
-/*
- * sleep_ms
- * Sleep for the given number of milliseconds.
- * Windows implementation delegates to Sleep(ms).
- */
 void sleep_ms(unsigned ms) {
-    Sleep(ms);
+    platform_sleep_ms(ms);
 }

@@ -107,9 +107,9 @@ static void draw_first_frame(const World* w, int tick, const Disease* dz) {
 /* Handle console resizing cleanly (buffer, cache, overlays, redraw) */
 static void handle_resize(const World* w, int tick, const Disease* dz) {
 #ifdef _WIN32
-    system("cls"); /* simple + reliable on Windows */
+    system("cls");
 #else
-    fputs("\x1b[2J\x1b[H", stdout);
+    fputs("\x1b[2J\x1b[H", stdout); fflush(stdout);
 #endif
     ensure_console_buffer_at_least(w->width, w->height + HUD_EXTRA_ROWS);
     invalidate_frame_cache(w);

@@ -15,9 +15,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>   /* system("cls") on Windows */
-#ifdef _WIN32
-#include <conio.h>    /* _getch, _kbhit */
-#endif
+#include "platform.h" /* _getch/_kbhit macros — cross-platform */
 
 #include "ansi.h"           /* cup(), HIDE_CURSOR, SHOW_CURSOR, ANSI_RESET, WRAP_OFF */
 #include "render.h"         /* render_cell_to_screen(), invalidate_frame_cache(), draw_frame_incremental() */

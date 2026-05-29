@@ -7,12 +7,22 @@
 
 Real-time disease spread across a world map, with terrain, climate, and settlement modifiers affecting per-cell infection probability via **Bernoulli trials**. Port and ship system using **BFS sea pathfinding** and a gravity model to generate trade routes. Ships sail live across the map. Includes a symptom mutation tree, cure system, and a **flicker-free diff renderer**.
 
-> **Platform:** Windows — build with Visual Studio 2022 (solution included)
+> **Platform:** Windows & Linux — cross-platform C, no external dependencies.
 
 ---
 
 ## How to Build & Run
 
+### Linux
+```bash
+git clone https://github.com/naybson/PlaugeCim.git
+cd PlaugeCim
+make
+./plague_sim
+```
+> Requires: `gcc`, `make`. Recommended terminal: 210+ columns × 65+ rows (maximize or zoom out with Ctrl+Scroll).
+
+### Windows
 1. Open **`Plauge simulator.sln`** in Visual Studio 2022
 2. Build: **Ctrl+Shift+B** (Debug | x64)
 3. Run: **F5**

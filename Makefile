@@ -1,10 +1,11 @@
-CC = gcc
-CFLAGS = -Iinclude -Wall -Wextra -O2
-SRC = $(wildcard src/*.c)
-OUT = plague_sim
+CC      = gcc
+CFLAGS  = -Iinclude -Wall -Wextra -O2
+LDFLAGS = -lm
+SRC     = $(wildcard src/*.c)
+OUT     = plague_sim
 
 all:
-	$(CC) $(CFLAGS) $(SRC) -o $(OUT)
+	$(CC) $(CFLAGS) $(SRC) -o $(OUT) $(LDFLAGS)
 
 run: all
 	./$(OUT)

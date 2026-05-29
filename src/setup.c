@@ -15,7 +15,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>     /* strtod/strtol/strtoul */
-#include <conio.h>      /* _getch, _kbhit */
+#include "platform.h" /* _getch/_kbhit macros — cross-platform */
 
 #include "setup.h"
 #include "utils.h"      /* now_ms(), sleep_ms() */

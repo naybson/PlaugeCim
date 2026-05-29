@@ -107,9 +107,9 @@ static void draw_percent_bar(int row, int col, const char* label, double pct) {
    - Awareness and Cure bars
    - Population snapshot
 */
-void draw_hud_line(const struct World* w, int tick,
-    const struct Disease* dz,
-    const struct CureState* cs) {
+void draw_hud_line(const World* w, int tick,
+    const Disease* dz,
+    const CureState* cs) {
     HudStats stats;
     compute_world_stats(w, &stats);
 

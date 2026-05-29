@@ -33,5 +33,6 @@ int  load_world_from_file(const char* path, World* w);
 void parse_cell_from_char(Cell* cell, char ch);
 int  allocate_world_grid(World* w);
 void free_world(World* w);
+void classify_settlement_all(World* w);
 
 #endif /* MAP_IO_H */

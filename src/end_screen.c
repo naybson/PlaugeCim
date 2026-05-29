@@ -26,9 +26,7 @@
 #include <string.h>
 #include <stdint.h>        /* uint64_t */
 
-#ifdef _WIN32
-#include <conio.h>       /* _getch on Windows */
-#endif
+#include "platform.h"  /* _getch/_kbhit macros — cross-platform */
 
 #include "ansi.h"
 #include "end_screen.h"
@@ -357,7 +355,11 @@ void end_screen_show(EndReason why, int tick) {
     for (;;) {
         int k = read_key_blocking();
         if (k == KEY_SAVE) {
+#ifdef _WIN32
             system("cls");
+#else
+            fputs("\x1b[2J\x1b[H", stdout);
+#endif
             if (g_es_dz && g_es_cfg) 
             {
                 prompt_and_save_current_preset();
